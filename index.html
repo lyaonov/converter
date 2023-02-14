@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert to SVG</title>
+</head>
+
+<body>
+    <div class="name-author">
+        <h4 id="author" title="GossJS">Леонов Никита</h4>
+    </div>
+
+    <div class="main">
+        <div class="first-example">
+            <h5 class="title-example">MathML converter</h5>
+            <textarea name="" id="XMLDoc" cols="30" rows="10">
+<строка>
+    <операнд>σ</операнд>
+    <оператор>=</оператор>
+    <корень>
+        <строка>
+            <дробь>
+                <строка>
+                    <число>1</число>
+                </строка>
+                <строка>
+                    <операнд>N</операнд>
+                </строка>
+            </дробь>
+            <строка>
+                <низверх>
+                    <строка>
+                        <оператор>∑</оператор>
+                    </строка>
+                    <строка>
+                        <операнд>i</операнд>
+                        <оператор>=</оператор>
+                        <число>1</число>
+                    </строка>
+                    <строка>
+                        <операнд>N</операнд>
+                    </строка>
+                </низверх>
+                <строка>
+                    <верх>
+                        <строка>
+                            <оператор >(</оператор>
+                            <низ>
+                                <строка>
+                                    <операнд>x</операнд>
+                                </строка>
+                                <строка>
+                                    <операнд>i</операнд>
+                                </строка>
+                            </низ>
+                            <оператор>−</оператор>
+                            <операнд>μ</операнд>
+                            <оператор >)</оператор>
+                        </строка>
+                        <строка>
+                            <число>2</число>
+                        </строка>
+                    </верх>
+                </строка>
+            </строка>
+        </строка>
+    </корень>
+    <оператор>.</оператор>
+</строка>
+            </textarea>
+            <button onclick="convert('MathML')">Convert</button>
+
+        </div>
+        <div class="second-example">
+            <h5 class="title-example">SVG converter</h5>
+            <textarea name="" id="SVGDoc" cols="30" rows="10">
+<root>
+    <графика ширина="640" высота="480">
+        <эллипс id="графика_1" заливка="rgba(255,0,0,0.5)" ободок="white" ширина-ободка="5" cx="206" cy="139" rx="100" ry="100" />
+        <эллипс id="графика_2" заливка="rgba(0,0,255,0.5)" ободок="white" ширина-ободка="5" cx="108" cy="111" rx="100" ry="100" />
+        <эллипс id="графика_3" заливка="rgba(0,255,0,0.5)" ободок="white" ширина-ободка="5" cx="134" cy="215" rx="100" ry="100" />
+    </графика>
+</root>
+            </textarea>
+            <button onclick="convert('SVG')">Convert</button>
+        </div>
+    </div>
+
+
+    <div class="output">
+        <div  class="result">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
